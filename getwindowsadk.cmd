@@ -43,6 +43,12 @@ REM set features=!features! OptionId.WindowsAssessmentServices
 
 REM SETTINGS END
 
+net session >nul 2>&1
+if not !ERRORLEVEL!==0 (
+	echo Error - this command prompt is not elevated
+	goto end
+)
+
 set bitsadmin_exe=%SYSTEMROOT%\System32\bitsadmin.exe
 set url=http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe
 
