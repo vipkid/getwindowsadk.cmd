@@ -1,17 +1,20 @@
 REM getwindowsadk.cmd
 REM Copyright (C) 2016 lea2000
 REM 
-REM This program is free software: you can redistribute it and/or modify  
-REM it under the terms of the GNU General Public License as published by  
-REM the Free Software Foundation, version 3.
+REM This program is free software; you can redistribute it
+REM and/or modify it under the terms of the GNU Lesser General
+REM Public License as published by the Free Software Foundation;
+REM either version 3 of the License, or (at your option) any
+REM later version.
 REM 
-REM This program is distributed in the hope that it will be useful, but 
-REM WITHOUT ANY WARRANTY; without even the implied warranty of 
-REM MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
-REM General Public License for more details.
+REM This program is distributed in the hope that it will be useful,
+REM but WITHOUT ANY WARRANTY; without even the implied warranty of
+REM MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+REM Lesser General Public License for more details.
 REM 
-REM You should have received a copy of the GNU General Public License 
-REM along with this program. If not, see <http://www.gnu.org/licenses/>.
+REM You should have received a copy of the GNU Lesser General Public
+REM License along with this program; if not, write to the Free Software
+REM Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 @echo off
 cls
