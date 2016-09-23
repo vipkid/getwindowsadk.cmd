@@ -52,7 +52,11 @@ if not !ERRORLEVEL!==0 (
 )
 
 set bitsadmin_exe=%SYSTEMROOT%\System32\bitsadmin.exe
+
+REM Windows ADK 10
 set url=http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe
+REM Windows ADK 8.1
+REM set url=https://download.microsoft.com/download/6/A/E/6AEA92B0-A412-4622-983E-5B305D2EBE56/adk/adksetup.exe
 
 set currentdir=%~dp0
 
