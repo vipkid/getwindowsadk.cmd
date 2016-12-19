@@ -1,3 +1,7 @@
+@echo off
+cls
+setlocal EnableDelayedExpansion
+
 REM getwindowsadk.cmd
 REM Copyright (C) 2016 lea2000
 REM 
@@ -15,10 +19,6 @@ REM
 REM You should have received a copy of the GNU Lesser General Public
 REM License along with this program; if not, write to the Free Software
 REM Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-
-@echo off
-cls
-setlocal EnableDelayedExpansion
 
 REM SETTINGS START
 
@@ -53,8 +53,10 @@ if not !ERRORLEVEL!==0 (
 
 set bitsadmin_exe=%SYSTEMROOT%\System32\bitsadmin.exe
 
-REM Windows ADK 10
-set url=http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe
+REM Windows ADK 10 1607
+set url=http://download.microsoft.com/download/9/A/E/9AE69DD5-BA93-44E0-864E-180F5E700AB4/adk/adksetup.exe
+REM Windows ADK 10 1511
+REM set url=http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe
 REM Windows ADK 8.1
 REM set url=https://download.microsoft.com/download/6/A/E/6AEA92B0-A412-4622-983E-5B305D2EBE56/adk/adksetup.exe
 
@@ -189,5 +191,5 @@ set exitcode=!ERRORLEVEL!
 if not exist "!workdir!" set exitcode=0
 echo !exitcode!
 
-pause
+timeout /t 10
 exit !exitcode!
